@@ -1,4 +1,5 @@
-Summary:	GNOME base library
+Summary:	Glib/GObject Networking Library
+Summary(pl):	Biblioteka sieciowa oparta o Glib/GObject
 Name:		libgtcpsocket
 Version:	0.2.0
 Release:	0.1
@@ -6,16 +7,25 @@ License:	LGPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/0.2/%{name}-%{version}.tar.bz2
 # Source0-md5:	39b811a4049b737d5c068f0e113f3431
+BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
-BuildRequires:	GConf2-devel
 BuildRequires:	intltool >= 0.25
 Requires(post):	/sbin/ldconfig
+Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+GTcpSocket is an object-based multi-threaded TCP/IP networking
+wrapper. It provides application-transparent support for proxies and
+basic SSL encryption.
+
+%description -l pl
+GTcpSocket to obiektowy, wielow±tkowy interfejs do funkcji sieciowych
+TCP/IP. Daje przezroczyst± dla aplikacji obs³ugê proxy i podstawowego
+szyfrowania SSL.
 
 %package devel
 Summary:	Headers for libgtcpsocket
@@ -24,6 +34,10 @@ Group:		Development/Libraries
 Requires:	%{name} = %{version}
 
 %description devel
+Headers for libgtcpsocket.
+
+%description devel -l pl
+Pliki nag³ówkowe libgtcpsocket.
 
 %package static
 Summary:	Static libgtcpsocket libraries
