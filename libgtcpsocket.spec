@@ -13,6 +13,7 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
 BuildRequires:	intltool >= 0.25
+BuildRequires:	libtool
 Requires(post):	/sbin/ldconfig
 Requires(post):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -97,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.la
 %{_pkgconfigdir}/*.pc
 %{_includedir}/*
-%doc %{_gtkdocdir}/*
+%{_gtkdocdir}/*
 
 %files static
 %defattr(644,root,root,755)
