@@ -5,7 +5,7 @@ Version:	0.2.0
 Release:	0.1
 License:	LGPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/0.2/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/libgtcpsocket/0.2/%{name}-%{version}.tar.bz2
 # Source0-md5:	39b811a4049b737d5c068f0e113f3431
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
@@ -32,7 +32,7 @@ szyfrowania SSL.
 Summary:	Headers for libgtcpsocket
 Summary(pl):	Pliki nag³ówkowe libgtcpsocket
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Headers for libgtcpsocket.
@@ -44,7 +44,7 @@ Pliki nag³ówkowe libgtcpsocket.
 Summary:	Static libgtcpsocket libraries
 Summary(pl):	Statyczne biblioteki libgtcpsocket
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of libgtcpsocket libraries.
