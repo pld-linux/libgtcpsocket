@@ -1,5 +1,5 @@
 Summary:	Glib/GObject Networking Library
-Summary(pl):	Biblioteka sieciowa oparta o Glib/GObject
+Summary(pl.UTF-8):   Biblioteka sieciowa oparta o Glib/GObject
 Name:		libgtcpsocket
 Version:	0.2.0
 Release:	0.1
@@ -23,33 +23,33 @@ GTcpSocket is an object-based multi-threaded TCP/IP networking
 wrapper. It provides application-transparent support for proxies and
 basic SSL encryption.
 
-%description -l pl
-GTcpSocket to obiektowy, wielow±tkowy interfejs do funkcji sieciowych
-TCP/IP. Daje przezroczyst± dla aplikacji obs³ugê proxy i podstawowego
+%description -l pl.UTF-8
+GTcpSocket to obiektowy, wielowÄ…tkowy interfejs do funkcji sieciowych
+TCP/IP. Daje przezroczystÄ… dla aplikacji obsÅ‚ugÄ™ proxy i podstawowego
 szyfrowania SSL.
 
 %package devel
 Summary:	Headers for libgtcpsocket
-Summary(pl):	Pliki nag³ówkowe libgtcpsocket
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe libgtcpsocket
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Headers for libgtcpsocket.
 
-%description devel -l pl
-Pliki nag³ówkowe libgtcpsocket.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe libgtcpsocket.
 
 %package static
 Summary:	Static libgtcpsocket libraries
-Summary(pl):	Statyczne biblioteki libgtcpsocket
+Summary(pl.UTF-8):   Statyczne biblioteki libgtcpsocket
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of libgtcpsocket libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja bibliotek libgtcpsocket.
 
 %prep
