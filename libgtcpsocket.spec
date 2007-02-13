@@ -1,5 +1,5 @@
 Summary:	Glib/GObject Networking Library
-Summary(pl.UTF-8):   Biblioteka sieciowa oparta o Glib/GObject
+Summary(pl.UTF-8):	Biblioteka sieciowa oparta o Glib/GObject
 Name:		libgtcpsocket
 Version:	0.2.0
 Release:	0.1
@@ -30,7 +30,7 @@ szyfrowania SSL.
 
 %package devel
 Summary:	Headers for libgtcpsocket
-Summary(pl.UTF-8):   Pliki nagłówkowe libgtcpsocket
+Summary(pl.UTF-8):	Pliki nagłówkowe libgtcpsocket
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -42,7 +42,7 @@ Pliki nagłówkowe libgtcpsocket.
 
 %package static
 Summary:	Static libgtcpsocket libraries
-Summary(pl.UTF-8):   Statyczne biblioteki libgtcpsocket
+Summary(pl.UTF-8):	Statyczne biblioteki libgtcpsocket
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
