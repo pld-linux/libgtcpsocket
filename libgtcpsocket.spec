@@ -10,7 +10,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/libgtcpsocket/0.2/%{name}-%{vers
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel
 BuildRequires:	intltool >= 0.25
 BuildRequires:	libtool
